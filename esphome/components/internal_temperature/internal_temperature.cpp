@@ -9,6 +9,8 @@ uint8_t temprature_sens_read();
 }
 #elif defined(USE_ESP32_VARIANT_ESP32C3) || defined(USE_ESP32_VARIANT_ESP32S2) || defined(USE_ESP32_VARIANT_ESP32S3)
 #include "driver/temp_sensor.h"
+#elif defined(USE_ESP32_VARIANT_ESP32C6)
+#include "driver/temperature_sensor.h"
 #endif  // USE_ESP32_VARIANT
 #endif  // USE_ESP32
 #ifdef USE_RP2040
